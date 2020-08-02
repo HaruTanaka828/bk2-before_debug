@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+
+
+
+<% if flash[:notice] %>
+ <div class="flash">
+<%= flash[:notice] %>
+</div>
+<% end %>
+
+
+
+
+
+
+<div class="col-xs-3">
+</div>
+
+
+<div class="col-xs-6">
+
+<h1>welcome to <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers !!</h1>
+<p>In <span><span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers,</span><br>
+
+you can share and exchange your opinions , inpressions , and emotions<br>
+
+about various books!</p>
+
+
+
+
+   <div><%= link_to "Log in", new_user_session_path,class:"btn btn-block btn-primary" %></div>
+   <div><%= link_to "Sign Up", new_user_registration_path,class:"btn btn-block btn-success"%></div>
+
+</div>
+
+<div class="col-xs-3">
+</div>
+</div>
